@@ -7,5 +7,5 @@ import Example from './index'
 test('Example test', () => {
   const { getByText } = render(<Example />)
 
-  expect(getByText('Example 2')).toBeTruthy()
+  expect(getByText('Example 4')).toBeTruthy()
 })
