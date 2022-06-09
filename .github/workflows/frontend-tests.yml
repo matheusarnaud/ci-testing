@@ -1,7 +1,9 @@
 name: Frontend Tests
 
 on: 
-  push
+  pull_request:
+    paths:
+      - 'src/*8'
 
 jobs:
   frontend-tests:
