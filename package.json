@@ -1,6 +1,6 @@
 {
   "name": "boiler",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^2.8.10",
@@ -53,7 +53,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "lint": "eslint . --ext .ts,.tsx",
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
