@@ -3,7 +3,7 @@ name: Frontend Tests
 on: 
   pull_request:
     paths:
-      - 'src/*8'
+      - 'src/**'
 
 jobs:
   frontend-tests:
@@ -14,13 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up node ${{ matrix.node-version }}
+      - name: Setting up node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
 
-      - name: Install dependencies
+      - name: Installing dependencies
         run: yarn install
 
       - name: Running eslint test
