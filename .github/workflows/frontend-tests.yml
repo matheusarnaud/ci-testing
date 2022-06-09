@@ -20,5 +20,5 @@ jobs:
           reporter: github-check
           eslint_flags: 'src/'
       - name: Running jest tests
-        working-directory: src/utils
+        working-directory: src
         run: yarn test
