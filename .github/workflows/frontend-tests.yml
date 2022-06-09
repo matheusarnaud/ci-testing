@@ -1,9 +1,7 @@
 name: Frontend Tests
 
 on: 
-  push:
-    paths: 
-      - 'src'
+  push
 
 jobs:
   frontend-tests:
