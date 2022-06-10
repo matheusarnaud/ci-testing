@@ -1,6 +1,6 @@
 {
   "name": "boiler",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^2.8.10",
@@ -40,20 +40,22 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
-    "husky": "^8.0.1",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
     "jest-styled-components": "^7.0.8",
     "prettier": "^2.6.2",
     "react-test-renderer": "^18.1.0",
     "ts-jest": "^28.0.3",
-    "ts-node": "^10.8.0"
+    "ts-node": "^10.8.0",
+    "husky": "^7.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "lint": "eslint . --ext .ts,.tsx",
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
